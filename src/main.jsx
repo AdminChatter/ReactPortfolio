@@ -12,7 +12,7 @@ import Resume from "./pages/Resume";
 const router = createBrowserRouter([
     {
         path: "/",
-        element: App,
+        element: <App />,
         children: [
             {
                 index: true,

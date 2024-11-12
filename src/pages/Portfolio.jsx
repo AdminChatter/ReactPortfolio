@@ -5,8 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Portfolio = () => {
     const [projects, setProjects] = useState([]);
-    const [loading, setLoading] = useState(true);
-    const [error, setError] = useState(null);
+    // const [loading, setLoading] = useState(true);
+    // const [error, setError] = useState(null);
 
     useEffect(() => {
         const fetchProjects = async () => {
@@ -23,8 +23,8 @@ const Portfolio = () => {
         fetchProjects();
     }, []);
 
-    if (loading) return <p>Loading...</p>;
-    if (error) return <p>Error loading repositories: {error.message}</p>;
+    // if (loading) return <p>Loading...</p>;
+    // if (error) return <p>Error loading repositories: {error.message}</p>;
 
     return (
         <div className="container-fluid">
