@@ -1,20 +1,38 @@
 import { useState, FormEvent, ChangeEvent } from "react";
 
 const Contact = () => {
-    const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+    const [form, setForm] = useState({
+        name: "",
+        email: "",
+        message: "",
+    });
+    const [error, setError] = useState(null);
+
+    const handleChange = (e) => {
         const { name, value } = e.target;
-        setSignUpData({
-            ...signUpData,
+        setForm({
+            ...form,
             [name]: value,
         });
     };
 
-    const handleSubmit = async (e: FormEvent) => {
+    const validation = () => {
+        if (!form.name || !form.email || !form.message) {
+            setError("All fields are required");
+            return false;
+        }
+        return true;
+    };
+
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        try {
-            const data = await signUp(signUpData);
-        } catch (err) {
-            console.error("Failed to login", err);
+        if (!validation()){
+            console.log("Form submitted:", form);
+            setForm({
+                name: "",
+                email: "",
+                message: "",
+            });
         }
     };
 
@@ -41,7 +59,7 @@ const Contact = () => {
                     <input
                         className="form-input"
                         placeholder="Enter your email"
-                        type="text"
+                        type="email"
                         name="email"
                         value={signUpData.email || ""}
                         onChange={handleChange}
@@ -58,7 +76,7 @@ const Contact = () => {
                     />
                     <div>
                         <button className="btn btn-primary mt-4" type="submit">
-                            Sign Up
+                            Submit
                         </button>
                     </div>
                 </form>
