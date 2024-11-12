@@ -5,7 +5,6 @@ const Navbar = () => {
   return (
     <nav className = "navbar navbar-expand-lg bg-body-tertiary" id = "main-nav">
       <div className = "container-fluid">
-          
           <Link className = "navbar-brand" to=''>My Portfolio</Link>
           <button className = "navbar-toggler" type = "button" data-bs-toggle = "collapse"
               data-bs-target = "#navbarSupportedContent" aria-expanded = "false" aria-label = "Toggle navigation">

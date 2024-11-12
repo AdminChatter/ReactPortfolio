@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './styles.css';
+// import './styles.css';
 
 const Portfolio = () => {
     const [projects, setProjects] = useState([]);

@@ -7,7 +7,7 @@ import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
 import Resume from "./pages/Resume";
 
-const routes = createBrowserRouter([
+const router = createBrowserRouter([
     {
         path: "/",
         element: App,

@@ -1,5 +1,3 @@
-import "./styles.css";
-
 const Footer = () => {
     return (
         <footer className="mt-auto text-center">
