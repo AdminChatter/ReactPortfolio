@@ -8,7 +8,7 @@ const Resume = () => {
                 </div>
                 <div className="card-body">
                     <p className="card-text">
-                        <a href="https://drive.google.com/file/d/1FjQh1V8XoL2Pv7XwL0yf7Y4lZ5HmTJ4J/view?usp=sharing" target="_blank" rel="noreferrer">Download my resume here</a>
+                        <a href="https://drive.google.com/file/d/1UmegJKi1RdUFrwDzRa-GKphJrBrTsYrp/view?usp=sharing" target="_blank" rel="noreferrer">Download my resume here</a>
                     </p>
 
                     <h2>Front-End Proficiencies</h2>

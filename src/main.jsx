@@ -3,11 +3,11 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import App from "./App";
-import AboutMe from "./pages/AboutMe";
-import Contact from "./pages/Contact";
-import Portfolio from "./pages/Portfolio";
-import Resume from "./pages/Resume";
+import App from "./App.jsx";
+import AboutMe from "./pages/AboutMe.jsx";
+import Contact from "./pages/Contact.jsx";
+import Portfolio from "./pages/Portfolio.jsx";
+import Resume from "./pages/Resume.jsx";
 
 const router = createBrowserRouter([
     {

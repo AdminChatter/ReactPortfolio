@@ -51,7 +51,7 @@ const Contact = () => {
                             placeholder="Enter your name here"
                             type="text"
                             name="username"
-                            value={signUpData.username || ""}
+                            value={form.username || ""}
                             onChange={handleChange}
                         />
 
@@ -61,7 +61,7 @@ const Contact = () => {
                             placeholder="Enter your email"
                             type="email"
                             name="email"
-                            value={signUpData.email || ""}
+                            value={form.email || ""}
                             onChange={handleChange}
                         />
 
@@ -71,7 +71,7 @@ const Contact = () => {
                             placeholder=""
                             type="password"
                             name="password"
-                            value={signUpData.password || ""}
+                            value={form.password || ""}
                             onChange={handleChange}
                         />
                         <div>

@@ -1,18 +1,21 @@
 import { Outlet } from "react-router-dom";
 
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 
 function App() {
     return (
         <>
-            <Header />
+
+                <Navbar />
+
 
             <main className="d-flex flex-column min-vh-100">
                 <Outlet />
             </main>
 
-            <Footer />
+            <footer className="mt-auto text-center">
+                <p>&copy; ReactPortfolio created by AdminChatter</p>
+            </footer>
         </>
     );
 }
